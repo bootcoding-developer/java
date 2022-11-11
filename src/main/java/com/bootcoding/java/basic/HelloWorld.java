@@ -27,12 +27,7 @@ public class HelloWorld {
             System.out.println("Hello World!");
         }
 
-        System.out.println("_   _        _  _          _    _               _      _");
-        System.out.println("| | | |      | || |        | |  | |             | |    | |");
-        System.out.println("| |_| |  ___ | || |  ___   | |  | |  ___   _ __ | |  __| |");
-        System.out.println("|  _  | / _ \| || | / _ \  | |/\| | / _ \ | '__|| | / _` |");
-        System.out.println("       | | | ||  __/| || || (_) | \  /\  /| (_) || |   | || (_| |");
-        System.out.println("\_| |_/ \___||_||_| \___/   \/  \/  \___/ |_|   |_| \__,_|");
+
 
     }
 }
