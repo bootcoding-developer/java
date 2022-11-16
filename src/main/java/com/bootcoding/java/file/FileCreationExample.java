@@ -6,29 +6,16 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.bootcoding.java.basic.variable;
+package com.bootcoding.java.file;
 
-public class IntExample {
+import java.io.File;
 
-    // Programming
+public class FileCreationExample {
     public static void main(String[] args) {
-        printAdd();
-        printSquare();
+        File file = new File("C://data//data2//data3//folder");
+        // creating new folder if not exists
+        if(file.exists()){
+            file.delete();
+        }
     }
-
-    public static void printAdd(){
-        int a = 10;
-        int b = 20;
-        int my$age = 30;
-        System.out.println("The addition : " + my$age);
-    }
-
-    public static void printSquare(){
-        int a = 5;
-        System.out.println("Square of 5: " + (5 * 5));
-    }
-
-
-
-
 }
