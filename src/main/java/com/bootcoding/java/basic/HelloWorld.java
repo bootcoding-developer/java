@@ -11,21 +11,31 @@ package com.bootcoding.java.basic;
 * Example of Hello World in Java
 * @author bootcoding-developer
 * */
+
+
 public class HelloWorld {
+
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Hello");
-        System.out.println("World!");
-        int limit = 100;
-        for (int i = 0; i<limit; i++){
-            for (int j=0; j<=i && i < limit/2; j++) {
-                System.out.print(" ");
-            }
-            for(int k=limit; k>i && i >= limit/2; k--){
-                System.out.print(" ");
-            }
-            System.out.println("Hello World!");
-        }
+
+        System.out.println("Hello!\nHow are you doing?\n");
+
+        System.out.println("She said \"Hello!\" to me.");
+
+        System.out.println("My JDK Installation Folder Path is ");
+        System.out.println("C:\\Program Files\\Java\\bin");
+
+
+        /*
+         *   -> What is an escape sequence
+         *       two characters of source code that represent a single character.
+         *       (The backslash allows you to escape the string to write special characters.)
+         *
+         *   newline         \n
+         *   tab             \t
+         *   double quote    \"
+         *   backslash       \\
+         *
+         * */
 
 
 

@@ -12,7 +12,7 @@ public class ArithmeticOperations {
 
 
     public static void main(String[] args) {
-
+//        print();
         add();
 
         subtract();
@@ -33,26 +33,62 @@ public class ArithmeticOperations {
 
     }
 
+
+
+    private static void print() {
+
+
+        System.out.println("Hello!\nHow are you doing?\n");
+        System.out.println("She said \"Hello!\" to me.");
+
+        /*
+        *   -> What is an escape sequence
+        *       two characters of source code that represent a single character.
+        *       (The backslash allows you to escape the string to write special characters.)
+        *
+        *   newline         \n
+        *   tab             \t
+        *   double quote    \"
+        *   backslash       \\
+        *
+        * */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     public static void add(){
         int result;
         System.out.println("ADDITION OF NUMBERS");
 
-        int x = 20;
+        int x = 20; // declare + initilization
+
         System.out.println("Initial value: " + x); // + is used to concatenate strings
 
-        result = x + 2; // initialize
+        result = x + 2; // 1.Addtion, 2.Assignment // = 22
         System.out.println("x + 2 = " + result);
 
-        result = x; // re-initialize
+        result = x; // re-initialize // = 20
         System.out.println("x = " + result);
 
         System.out.println(); // a blank line print
+
         double y = 23.7545;
-//        float z = 44.33f;
-//        result = x + y;
-        System.out.println("x + y = " + result);
-//        result = x + z;
-        System.out.println("x + z = " + result);
+        float z = (float) 48296.47;
+        float z2 =  23.334f;
+
+        double dd = x + y;
+        System.out.println("x + y = " + (x + y));
+        float res = x + z;
+        System.out.println("x + z = " + (x + z));
     }
 
     public static void subtract(){
@@ -87,7 +123,7 @@ public class ArithmeticOperations {
 
         System.out.println("Initial value: " + postIncrement);
         System.out.println("postIncrement++   = " + (postIncrement++));
-        int result = 10 + postIncrement++;
+        int result = 10 + postIncrement++; // 1.add 2.assignment 3.increment
         System.out.println(" result (10 + postIncrement++) = " + result);
         System.out.println("postIncrement++   = " + postIncrement);
         System.out.println();
@@ -103,6 +139,7 @@ public class ArithmeticOperations {
         System.out.println("--preDecrement   = " + result);
         result = 10 + --preDecrement;
         System.out.println(" result (10 + --preDecrement) = " + result);
+        System.out.println(preDecrement);
         System.out.println();
     }
 
@@ -134,8 +171,10 @@ public class ArithmeticOperations {
         System.out.println("DIVISION (INT)");
         int divOnInt = 15;
 
+        double divOnDouble = 15.00;
         System.out.println("Initial value: " + divOnInt);
         System.out.println("divOnInt / 2 = " + (divOnInt / 2));
+        System.out.println("divOnDouble / 2 = " + (divOnDouble / 2));
         System.out.println("divOnInt = " + divOnInt);
         System.out.println();
     }
