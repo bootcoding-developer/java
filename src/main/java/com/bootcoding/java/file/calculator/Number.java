@@ -4,10 +4,10 @@ import java.util.List;
 
 public class Number {
 
-    private List<Integer> numbers;
+    private List<Integer> numbers; // {1,23,5,66} - sum
     private int addition;
     private int subtraction;
-    private int multiplication;
+    private long multiplication;
 
     public List<Integer> getNumbers() {
         return numbers;
@@ -33,11 +33,11 @@ public class Number {
         this.subtraction = subtraction;
     }
 
-    public int getMultiplication() {
+    public long getMultiplication() {
         return multiplication;
     }
 
-    public void setMultiplication(int multiplication) {
+    public void setMultiplication(long multiplication) {
         this.multiplication = multiplication;
     }
 }

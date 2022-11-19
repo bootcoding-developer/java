@@ -8,10 +8,6 @@ import java.util.stream.Collectors;
 
 public class FileService {
 
-    public static void main(String[] args) {
-        FileService fs = new FileService();
-        fs.createInputFile();
-    }
 
     public List<Number> readFile(File file){
         try {
@@ -19,7 +15,7 @@ public class FileService {
             List<Number> numbers = new ArrayList<>();
             while(sc.hasNext()){
                 String line = sc.nextLine();
-                numbers.add(toNumber(line));
+                numbers.add(convertToNumber(line));
             }
             return numbers;
         }catch (IOException ex){
@@ -28,18 +24,20 @@ public class FileService {
         return Collections.emptyList();
     }
 
-    private Number toNumber(String line) {
+    private Number convertToNumber(String line) {
         String[] tokens = line.trim().split(",");
         Number number = new Number();
         number.setNumbers(Arrays.stream(tokens)
                 .map(Integer::valueOf)
                 .collect(Collectors.toList()));
-        return  number;
+        return number;
     }
 
-    public void createInputFile(){
+    public String createInputFile(){
+        String path = "/Users/bootcoding/workspace/java/src/main/java/com/bootcoding/java/file/calculator/input.txt";
+
         try {
-            File file = new File("/Users/bootcoding/workspace/java/src/main/java/com/bootcoding/java/file/calculator/input.txt");
+            File file = new File(path);
             file.createNewFile();
             int noOfLines = 100;
             List<String> lines = new ArrayList<>();
@@ -61,11 +59,12 @@ public class FileService {
         }catch (Exception ex){
             ex.printStackTrace();
         }
+        return path;
     }
 
     public void writeToFile(List<Number> numbers) {
        try{
-           FileWriter fw = new FileWriter("output.txt");
+           FileWriter fw = new FileWriter("/Users/bootcoding/workspace/java/src/main/java/com/bootcoding/java/file/calculator/output.txt");
            for(Number number: numbers){
                fw.write(toString(number));
            }
@@ -74,12 +73,12 @@ public class FileService {
        }catch (IOException ex){
            ex.printStackTrace();
        }
-
     }
 
     private String toString(Number number) {
-//       number.getNumbers().stream().collect(Collectors.joining(","),);
-        //number.getNumbers().stream().map(x -> x).collect(Collectors.joining(","));
-        return "";
+        List<Integer> numbers = number.getNumbers();
+        String output = "," + number.getAddition() + "," + number.getSubtraction() + "," + number.getMultiplication();
+        return numbers.stream().map(String::valueOf)
+                .collect(Collectors.joining(",")) + output + "\n";
     }
 }
