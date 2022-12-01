@@ -19,12 +19,14 @@ public class CalculatorService {
 
     }
 
+
     private void add(Number number){
         List<Integer> numbers = number.getNumbers();
         int sum = 0;
         for(int i = 0; i < numbers.size(); i++){
             sum = sum + numbers.get(i);
         }
+
         number.setAddition(sum);
     }
 
