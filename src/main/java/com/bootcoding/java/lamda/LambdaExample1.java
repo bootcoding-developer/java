@@ -1,19 +1,54 @@
 package com.bootcoding.java.lamda;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
 public class LambdaExample1 {
 
 
-    public static void main(String[] args) {
-        new LambdaExample1().test();
+    /// functional interface  - single abstract function
+
+    // zero parameter/ argument function
+    //  () -> 10 + 20;
+
+    // one parameter/argument function
+    // (x) -> x + 20;
+
+
+    // two parameter / argument function
+    // (x,y) -> x + y;
+
+    interface calcFunction {
+        int operation();
     }
 
-    public void test(){
+    private int operate(calcFunction funcObject)
+    {
+        return funcObject.operation();
+    }
+
+    public static void main(String[] args) {
+
+        // Functional Interface - treated as a function object
+        calcFunction add = () -> 19 + 29;
+        calcFunction mul = () -> 19 * 29;
+
+        int a= 20;
+        String s = new String();
+
+        LambdaExample1 lambdaObject = new LambdaExample1();
+
+        int result = lambdaObject.operate(add);
+        int result2 = lambdaObject.operate(mul);
+
+        // Add two numbers using lambda expression
+        System.out.println("Addition is " + result);
+        System.out.println("Multiplication is " + result2);
+    }
+
+
+    public void test(int x){
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(3);
