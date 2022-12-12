@@ -13,10 +13,27 @@ public class StringMethodsExample {
 //        System.out.println(data.toLowerCase());
 //        System.out.println(data.toUpperCase());
 
-        String content = "In this HTML tutorial, " +
+        String content2 = "In this HTML tutorial, " +
                 "you will find more than 200 examples. " +
                 "With our online \"Try it Yourself\" editor, " +
                 "you can. edit and test each. example. yourself!\n" ;
+
+
+
+
+
+        String content = "you can. edit and test each. example. yourself";
+
+        String[] words = content.split(" ");
+
+        String text = String.join(",", words);
+
+        System.out.println(text);
+
+
+
+
+
 
         String s1 = "HTML";
         String s2 = "html";

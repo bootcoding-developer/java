@@ -29,6 +29,7 @@ public class LambdaExample2 {
         int result = lambdaObject.operate(10, 20, add);
         int result2 = lambdaObject.operate(10, 20, mul);
 
+
         // Add two numbers using lambda expression
         System.out.println("Addition is " + result);
         System.out.println("Multiplication is " + result2);

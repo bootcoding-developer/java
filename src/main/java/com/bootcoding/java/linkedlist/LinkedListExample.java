@@ -37,6 +37,46 @@ public class LinkedListExample {
 
 
 
+class Speaker{
+
+       double price;
+         String color;
+         String name;
+
+        public Speaker(String color){
+            this.color= color;
+        }
+}
+
+
+
+    public void test(int i){
+       if(i == 0){
+           return;
+       }
+        System.out.println(" i = " + i);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
