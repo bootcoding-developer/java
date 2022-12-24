@@ -14,20 +14,44 @@ public class ConditionDemo {
     public static void main(String[] args) {
 
 
+        // Arithmetic Operators +-*/% ++ --
 
         // Conditional Operators
         // > , <, <=, >=, == , !=
-        boolean isMorning = true;
+
+        int a = 10;
+        int b= 20;
+        boolean val = a > b; // true / false (boolean)
+
+
+        // keywords - if and else
+
+//        if(condition){ // true // false
+//            // block execute // nahi hoga
+//        }
+
+        if(a > b){
+            System.out.println("A is greater");
+        } else{
+            System.out.println("B is greater");
+        }
+
+
+
+
+        boolean isMorning = false;
+
         if(isMorning) {
             System.out.println("Good Morning!");
         }else {
             System.out.println("Good Evening");
         }
+
+
+         
         int currentTime = 9;
         if(currentTime <= 12){
             System.out.println("Good Morning!");
-        }else{
-            System.out.println("Good Evening");
         }
         if(currentTime > 12){
             System.out.println("Good Evening");
@@ -37,6 +61,17 @@ public class ConditionDemo {
         // a + b * c - d
         // a > b < c ! d
         // Logical Operators -> && || !
+        // true && true = true
+        // true && false = false
+        // false && true = false
+        // false && false = false
+
+        // true || true = true
+        // true || false = true
+        // false || true = true
+        // false || false = false
+
+        // true -> !true = false | false -> !false = true
         if(currentTime > currentTime || currentTime <= currentTime){
 
         }
@@ -44,7 +79,7 @@ public class ConditionDemo {
 
 
 
-        int a = 15;
+        a = 15;
         // check a number is divisible by 3 - print divisible by 3
         // else print - not divisible by 3
         if(a % 3 == 0){

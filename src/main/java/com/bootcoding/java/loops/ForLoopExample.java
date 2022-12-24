@@ -17,13 +17,24 @@ public class ForLoopExample {
         // condition
         // increment/decrement
 
-        // initiailization while(condition) {.... inc/dec}
-        for(int count = 0; count <= 10; count++){
-            System.out.println(" Increment Loop "+ count);
+        int age = 100;
+        int temp = 100;
+        // check -E - divide by 2 or odd - subtract by 1 until age becomes 0
+        int steps = 0;
+        for(int i = 0; age > 0; i++){
+            if(age % 2 == 0){
+                // Even number
+                age = age / 2;
+            }else{
+                // odd number
+                age = age - 1;
+            }
+            steps++;
         }
+        System.out.println("Number of steps required to make " + temp + " into 0 is " + steps);
 
-        for(int count = 10; count >= 0; count--){
-            System.out.println(" Decrement Loop " + count);
-        }
+        // 1
+        // 100 / 2 = 50/2 = 25, 25-1, 24/2, 12/2, 6/2, 3-1, 2/2, 1/2
+
     }
 }

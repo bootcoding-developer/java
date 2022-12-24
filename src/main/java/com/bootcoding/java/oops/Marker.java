@@ -1,7 +1,7 @@
 package com.bootcoding.java.oops;
 
 public class Marker {
-    // Data Member
+    // Data Member - instance variable
     public String type;
     public String brand;
     public String color;

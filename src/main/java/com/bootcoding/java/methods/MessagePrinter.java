@@ -33,6 +33,9 @@ public class MessagePrinter {
     public static double div(double x, double y){
         return x / y;
     }
+
+
+
     public static void print(String message){
         System.out.println(message);
     }
