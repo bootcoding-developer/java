@@ -78,7 +78,7 @@ public class ArithmeticOperations {
 
         System.out.println("Initial value: " + rem);
         result = rem % 2; // remainder
-        System.out.println("rem % 2 = " + result);
+        System.out.println("rem % 22 = " + result);
         result = rem;
         System.out.println("rem = " + result);
         System.out.println();
