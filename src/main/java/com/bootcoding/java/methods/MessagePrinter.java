@@ -2,9 +2,14 @@ package com.bootcoding.java.methods;
 
 public class MessagePrinter {
 
+
     public static void main(String[] args) {
         printBasicArithmeticOperation(10, 20);
     }
+
+
+
+
 
     // Defining method
     public static void printBasicArithmeticOperation(int x, int y){
@@ -21,6 +26,8 @@ public class MessagePrinter {
         print("Division of " + x + " and " + y + " = " + divRes);
 
     }
+
+
     public static int add(int xx, int yy){
         return xx + yy;
     }
@@ -35,9 +42,10 @@ public class MessagePrinter {
     }
 
 
-
     public static void print(String message){
         System.out.println(message);
     }
+
+
 }
 
