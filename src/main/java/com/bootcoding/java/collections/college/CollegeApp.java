@@ -14,10 +14,16 @@ public class CollegeApp {
         kdkCollege.setDepts(departments);
 
 
-        try {
-            ObjectMapper om = new ObjectMapper();
-            System.out.println(om.writeValueAsString(kdkCollege));
-        }catch (Exception ex){
+        printCollege(kdkCollege);
+    }
+
+    private static void printCollege(College kdkCollege) {
+        ArrayList<Department> depts = kdkCollege.getDepts();
+        for(Department d : depts){
+            int id = d.getId();
+            String name = d.getName();
+            System.out.println("ID = " + id);
+            System.out.println(" Name = " + name);
 
         }
     }
