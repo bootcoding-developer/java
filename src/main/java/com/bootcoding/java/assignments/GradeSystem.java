@@ -1,9 +1,12 @@
 package com.bootcoding.java.assignments;
 
+import java.util.Scanner;
+
 public class GradeSystem {
 
     public static void main(String[] args) {
-        int[] studentPercentages = {67,58,99,69,35,87};
+        Scanner s = new Scanner(System.in);
+        int[] studentPercentages = {167,58,99,69,35,87};
         char[] gradeResults = calculateGrade(studentPercentages);
         for(int i = 0 ; i < gradeResults.length; i++){
             System.out.println(studentPercentages[i] + " -> " + gradeResults[i]);
