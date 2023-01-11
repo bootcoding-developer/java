@@ -29,6 +29,7 @@ public class ScannerDemo {
         digits[0] = 1;
         return digits;
     }
+
     private static int[] takeArrayFromUser(Scanner scanner, int size) {
         System.out.println("Enter Elements: ");
         int[] numbers = new int[size];
@@ -37,12 +38,14 @@ public class ScannerDemo {
         }
         return numbers;
     }
+
     private static void printPrimeNumberOfArray(int[] numbers) {
         for(int i = 0; i< numbers.length; i++){
             boolean res = isPrimeNumber(numbers[i]);
             System.out.println("is " + numbers[i] + " a prime number ? = " + res);
         }
     }
+
     public static boolean isPrimeNumber(int num){
         for(int i = 2; i < num/2; i++){
             if(num % i == 0){
