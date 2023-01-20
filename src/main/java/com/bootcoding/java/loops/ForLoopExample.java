@@ -10,9 +10,28 @@ package com.bootcoding.java.loops;
 
 public class ForLoopExample {
 
+    public static void main2(){
+        int n = 10;
+        for(int i = 0; i < n/2; i++){
+            System.out.println(i);
+        }
+        // O(n)
+        for(int i = 0; i < n; i++){
+            System.out.println(i);
+            for(int j = 0; j < n; j++){
+                System.out.println(i);
+                for(int k = 0; k < n; k++){
+                    System.out.println(i);
+                }
+            }
+
+            // O(n2) + O(n) = O(2n2) = O(n2)
+
+        }
+    }
     public static void main(String[] args) {
 
-
+        main2();
         // initialization
         // condition
         // increment/decrement

@@ -8,9 +8,13 @@
 
 package com.bootcoding.java.file;
 
+import com.bootcoding.java.assignments.NegativeElement;
+
 public class ArithmeticFileExample {
 
     public static void main(String[] args) {
         // C://data//numbers//input.txt
+
+        NegativeElement.iAmStaticMethod(); // Utility methods
     }
 }

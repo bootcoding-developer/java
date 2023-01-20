@@ -16,5 +16,7 @@ public class ObjectAssignment {
         Marker blackMarker = new Marker();
         blackMarker.color= "BLACK";
         blackMarker.print();
+
+        NegativeElement.iAmStaticMethod();
     }
 }
